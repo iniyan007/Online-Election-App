@@ -5,8 +5,15 @@
   `Voters` sould vote for them and there will be `Admin` who host the election (Inside the college)
 
 ## Project workflow
+
+1. saf
+  1. asfd
+  1. asdf
+
+
+
 1.**Admin**
-  1.The one who host the election 
+    1.The one who host the election 
   1.They have the rights to Outline the election he will choose the Candidates and Creat the ajanda of the Election
   1.they post the results after the election
 2.**Candidate**
