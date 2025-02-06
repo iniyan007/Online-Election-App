@@ -5,22 +5,23 @@
   `Voters` sould vote for them and there will be `Admin` who host the election (Inside the college)
 
 ## Project workflow
-1.**Admin**
+### **Admin**
    
     1.The one who host the election 
     
     2.They have the rights to Outline the election he will choose the Candidates and Creat the ajanda of the Election
     
     3.they post the results after the election
-2.**Candidate**
+
+### **Candidate**
     
     1.They have the profiles where they post the activities that they have done before
     
     2.There will be Dashboard which showcase the Elections which are enrolled 
-3.**Voters**
+### **Voters**
     
     1.They are voting for the election
-    
+
     2.They can see the candidate profile, activities and propagandas
     
     3.They are login using their College mail id so that Valid voters only poll for the election
