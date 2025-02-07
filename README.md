@@ -42,3 +42,10 @@ This app enable the Voters to vote for the correct Candidate
 ## Future updates
 
 1. Social media like Pages where the activities of the candidates are posted where the voters can like and comment  
+
+
+## Layout Images
+
+![Voters page](./images/layout1.jpeg)
+![Candidate page](./images/layout2.jpeg)
+![Admin page](./images/layout3.jpeg)
