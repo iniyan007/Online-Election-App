@@ -6,15 +6,14 @@ import AboutPage from "./pages/AboutPage";
 import SearchPage from "./pages/SearchPage";
 import ProfilePage from "./pages/ProfilePage";
 
-
 function App() {
   const [activePageIndex, setActivePageIndex] = useState(0);
 
   const NAVBAR_ITEMS = [
-    { icon: "🏠", text: "home", component: <HomePage /> },
+    { icon: "🏠", text: "home", component: <HomePage setActivePageIndex={setActivePageIndex} /> },  // ✅ Pass setActivePageIndex
     { icon: "🖼️", text: "About", component: <AboutPage /> },
     { icon: "🔍", text: "search", component: <SearchPage /> },
-    { icon: "🤦", text: "Profile", component: <ProfilePage /> },
+    { icon: "🤦", text: "Profile", component: <ProfilePage /> },// ✅ Added CandidatesPage
   ];
 
   const activePage = NAVBAR_ITEMS[activePageIndex].component;

@@ -1,0 +1,92 @@
+/* HomePage.css */
+.election-container {
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Tailwind bg-gray-100 */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .election-title {
+    font-size: 1.875rem; /* Tailwind text-3xl */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937; /* Tailwind text-gray-800 */
+    text-align: center;
+  }
+  
+  .election-grid {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .election-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3b82f6; /* Tailwind border-blue-500 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .election-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .election-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .election-status {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .enrolled {
+    color: #10b981; /* Tailwind text-green-600 */
+    font-weight: bold;
+  }
+  
+  .not-enrolled {
+    color: #ef4444; /* Tailwind text-red-600 */
+    font-weight: bold;
+  }
+  
+  .election-time {
+    margin-top: 0.5rem;
+    color: #6b7280; /* Tailwind text-gray-600 */
+  }
+  
+  .vote-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .vote-button.enabled {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .vote-button.enabled:hover {
+    background-color: #2563eb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .vote-button.disabled {
+    background-color: #9ca3af;
+    color: white;
+    cursor: not-allowed;
+  }
+  

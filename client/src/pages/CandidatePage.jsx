@@ -21,7 +21,7 @@ const candidates = [
   }
 ];
 
-function ProfilePage() {
+function CandidatePage() {
   return (
     <div className="candidate-container">
       <h1 className="candidate-title">Select Your Candidate</h1>
@@ -40,5 +40,4 @@ function ProfilePage() {
   );
 }
 
-
-export default ProfilePage;
+export default CandidatePage;
