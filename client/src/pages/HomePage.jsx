@@ -1,4 +1,7 @@
-import "../components/card.css"; // Import external CSS file
+import "../components/card.css"; 
+import "./ProfilePage.jsx";
+import { useState } from "react";
+import ProfilePage from "./ProfilePage.jsx";
 
 const elections = [
   { name: "Presidential Election", status: "Enrolled", from: "10 Feb 2025", to: "15 Feb 2025" },
@@ -7,8 +10,14 @@ const elections = [
 ];
 
 function HomePage() {
- // ✅ Correct placement
+  const [showCandidate, setShowCandidate] = useState(false);
 
+  const handleButtonClick = () => {
+    setShowCandidate(true);
+  };
+  if (showCandidate) {
+    return <ProfilePage />;
+  }
   return (
     <div className="election-container">
       <h1 className="election-title">Upcoming Elections</h1>
@@ -29,7 +38,7 @@ function HomePage() {
             <button
               className={`vote-button ${election.status === "Enrolled" ? "enabled" : "disabled"}`}
               disabled={election.status !== "Enrolled"}
-       // ✅ Correct path
+              onClick={handleButtonClick}
             >
               Vote
             </button>

@@ -1,4 +1,4 @@
-import "../components/candidate.css"; // Import CSS
+import "../components/candidate.css"; 
 
 const candidates = [
   {
@@ -24,18 +24,17 @@ const candidates = [
 function ProfilePage() {
   return (
     <div className="candidate-container">
-      <h1 className="candidate-title">Select Your Candidate</h1>
-
+      <h1 className="candidate-title">Candidate List</h1>
       <div className="candidate-grid">
         {candidates.map((candidate) => (
           <div key={candidate.id} className="candidate-card">
             <img src={candidate.image} alt={candidate.name} className="candidate-image" />
-            <h2 className="candidate-name">{candidate.name}</h2>
+            <h2 className="candidate-name">{candidate.name}<br /></h2>
             <p className="candidate-vision">{candidate.vision}</p>
-            <button className="vote-button">Cast Vote!</button>
           </div>
         ))}
       </div>
+      <button className="vote-button">Cast Vote!</button>
     </div>
   );
 }
